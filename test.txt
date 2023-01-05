@@ -1,0 +1,33 @@
+x && y >=0
+
+point {
+    int x 
+    int y
+}
+
+polygon {
+    int amount 
+    point ** points []
+
+}
+
+point a = {5,3}
+point b= {7,9}
+point c = {6,9}
+
+
+
+ask(how much vertices do you want ?)
+u_amoun = get()
+
+newOne = calloc(u_amoun,point)
+
+polygon->points=newOne
+polygon->amount+=u_amont
+
+void printPolygon(points * addr)
+{
+    loop i < polygon->amount{
+        printf(*(polygon->points+i))
+    }
+}
